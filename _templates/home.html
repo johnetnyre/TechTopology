@@ -1,65 +1,146 @@
+```html
 {% extends '_templates/base.html' %}
 {% block content %}
 <div class="shell">
+
   <section class="welcome-panel" aria-labelledby="welcome-title">
     <div>
       <p class="section-kicker">Welcome</p>
-      <h1 id="welcome-title">The {{ conference.ordinal }} annual Tech Topology Conference</h1>
-      <p class="lede">Tech Topology brings together researchers in low-dimensional, geometric, contact, and symplectic topology for a weekend of invited talks, lightning talks, and mathematical conversation at Georgia Tech.</p>
-      <div class="button-row">
-        {% if conference.registration_open and conference.registration_url %}
-        <a class="button button--primary" href="{{ conference.registration_url }}">Register / Propose a Lightning Talk</a>
-        <section class="deadline-callout" aria-labelledby="deadlines-heading">
-  <h2 id="deadlines-heading">Important deadlines</h2>
 
-  <ul>
-    <li>
-      <strong>Funding request priority deadline:</strong>
-      {{ conference.funding_deadline }}
-    </li>
-    <li>
-      <strong>Lightning talk proposal deadline:</strong>
-      {{ conference.lightning_deadline }}
-    </li>
-  </ul>
-</section>
-        {% endif %}
-        <a class="button button--secondary" href="{{ url('/schedule/') }}">Schedule information</a>
-        <a class="button button--secondary" href="{{ url('/previous-conferences/') }}">Conference archive</a>
+      <h1 id="welcome-title">
+        The {{ conference.ordinal }} annual Tech Topology Conference
+      </h1>
+
+      <p class="lede">
+        Tech Topology brings together researchers in low-dimensional,
+        geometric, contact, and symplectic topology for a weekend of invited
+        talks, lightning talks, and mathematical conversation at Georgia Tech.
+      </p>
+
+      <div class="button-row">
+        <a class="button button--secondary"
+           href="{{ url('/schedule/') }}">
+          Schedule information
+        </a>
+
+        <a class="button button--secondary"
+           href="{{ url('/previous-conferences/') }}">
+          Conference archive
+        </a>
       </div>
     </div>
+
     <aside class="archive-note" aria-label="Conference status">
       <strong>{{ conference.year }} conference</strong>
-      <p>Tech Topology will take place <strong>{{ conference.dates }}</strong> at Georgia Tech in Atlanta.</p>
+
+      <p>
+        Tech Topology will take place
+        <strong>{{ conference.dates }}</strong>
+        at Georgia Tech in Atlanta.
+      </p>
     </aside>
   </section>
 
+
+  <section class="content-panel deadline-callout"
+           aria-labelledby="deadlines-heading">
+
+    <p class="section-kicker">Registration</p>
+
+    <h2 id="deadlines-heading">Important deadlines</h2>
+
+    <ul>
+      <li>
+        <strong>Funding request priority deadline:</strong>
+        {% if conference.funding_deadline != 'To be announced' %}
+          {{ conference.funding_deadline }}
+        {% else %}
+          To be announced
+        {% endif %}
+      </li>
+
+      <li>
+        <strong>Lightning talk proposal deadline:</strong>
+        {% if conference.lightning_deadline != 'To be announced' %}
+          {{ conference.lightning_deadline }}
+        {% else %}
+          To be announced
+        {% endif %}
+      </li>
+    </ul>
+
+    {% if conference.registration_open and conference.registration_url %}
+    <p class="deadline-action">
+      <a class="button button--primary"
+         href="{{ conference.registration_url }}">
+        Register / Propose a Lightning Talk
+      </a>
+    </p>
+    {% endif %}
+
+  </section>
+
+
   <section class="speaker-showcase" aria-labelledby="speaker-heading">
+
     <div class="section-heading">
       <div>
         <p class="section-kicker">Invited program</p>
-        <h2 id="speaker-heading">{{ conference.year }} speakers</h2>
+
+        <h2 id="speaker-heading">
+          {{ conference.year }} speakers
+        </h2>
       </div>
     </div>
+
     <ul class="speaker-list">
       {% for speaker in speakers %}
-      <li><a href="{{ speaker.url }}">{{ speaker.name }}</a> <span>({{ speaker.institution }})</span></li>
+      <li>
+        <a href="{{ speaker.url }}">{{ speaker.name }}</a>
+        <span>({{ speaker.institution }})</span>
+      </li>
       {% endfor %}
     </ul>
+
   </section>
 
+
   <div class="home-grid">
+
     <section class="content-panel" aria-labelledby="program-heading">
+
       <p class="section-kicker">Program</p>
+
       <h2 id="program-heading">Schedule forthcoming</h2>
-      <p>The detailed {{ conference.year }} schedule, talk titles, abstracts, and lightning-talk information will be posted as they become available.</p>
-      <a class="text-link" href="{{ url('/schedule/') }}">Schedule page <span aria-hidden="true">→</span></a>
+
+      <p>
+        The detailed {{ conference.year }} schedule, talk titles, abstracts,
+        and lightning-talk information will be posted as they become available.
+      </p>
+
+      <a class="text-link" href="{{ url('/schedule/') }}">
+        Schedule page <span aria-hidden="true">→</span>
+      </a>
+
     </section>
-    <section class="content-panel warning-panel" aria-labelledby="scam-heading">
+
+
+    <section class="content-panel warning-panel"
+             aria-labelledby="scam-heading">
+
       <p class="section-kicker">Conference safety</p>
+
       <h2 id="scam-heading">Scam warning</h2>
-      <p>Conference accommodation scams sometimes target participants. Official conference communication will come from an organizer or a <strong>gatech.edu</strong> email address.</p>
+
+      <p>
+        Conference accommodation scams sometimes target participants.
+        Official conference communication will come from an organizer or a
+        <strong>gatech.edu</strong> email address.
+      </p>
+
     </section>
+
   </div>
+
 </div>
 {% endblock %}
