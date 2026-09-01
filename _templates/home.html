@@ -7,7 +7,10 @@
       <h1 id="welcome-title">The {{ conference.ordinal }} annual Tech Topology Conference</h1>
       <p class="lede">Tech Topology brings together researchers in low-dimensional, geometric, contact, and symplectic topology for a weekend of invited talks, lightning talks, and mathematical conversation at Georgia Tech.</p>
       <div class="button-row">
-        <a class="button button--primary" href="{{ url('/schedule/') }}">Schedule information</a>
+        {% if conference.registration_open and conference.registration_url %}
+        <a class="button button--primary" href="{{ conference.registration_url }}">Register / Propose a Lightning Talk</a>
+        {% endif %}
+        <a class="button button--secondary" href="{{ url('/schedule/') }}">Schedule information</a>
         <a class="button button--secondary" href="{{ url('/previous-conferences/') }}">Conference archive</a>
       </div>
     </div>
