@@ -42,6 +42,14 @@
   display: inline-block;
 }
 
+.speaker-showcase .section-heading {
+  text-align: center;
+}
+
+.speaker-showcase .section-heading > div {
+  width: 100%;
+}
+
 .speaker-showcase .speaker-list {
   width: fit-content;
   margin-left: auto;
