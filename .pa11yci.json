@@ -1,0 +1,17 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 250
+  },
+  "urls": [
+    "http://127.0.0.1:8000/",
+    "http://127.0.0.1:8000/schedule/",
+    "http://127.0.0.1:8000/participants/",
+    "http://127.0.0.1:8000/registration/",
+    "http://127.0.0.1:8000/local-information/",
+    "http://127.0.0.1:8000/past-speakers/",
+    "http://127.0.0.1:8000/contact/",
+    "http://127.0.0.1:8000/accessibility/"
+  ]
+}

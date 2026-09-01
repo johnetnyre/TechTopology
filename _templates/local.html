@@ -1,0 +1,35 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <header class="page-header page-header--standalone">
+    <p class="section-kicker">Atlanta</p>
+    <h1>Local information</h1>
+    <p class="lede">The conference is held at Georgia Tech in Midtown Atlanta. All {{ conference.year }} talks were in {{ local.venue.room }}.</p>
+  </header>
+  <div class="local-grid">
+    <section class="content-card" aria-labelledby="venue-heading">
+      <p class="section-kicker">Conference venue</p>
+      <h2 id="venue-heading">{{ local.venue.name }}</h2>
+      <p><strong>{{ local.venue.room }}</strong><br>Georgia Institute of Technology<br>Atlanta, Georgia</p>
+      <div class="button-row">
+        <a class="button button--primary" href="{{ local.venue.campus_map }}">Georgia Tech campus map</a>
+        <a class="button button--secondary" href="{{ local.venue.parking }}">Visitor parking</a>
+      </div>
+    </section>
+    <section class="content-card" aria-labelledby="travel-heading">
+      <p class="section-kicker">Getting around</p>
+      <h2 id="travel-heading">Midtown location</h2>
+      <p>Skiles is centrally located on the Georgia Tech campus and within walking distance of several Midtown hotels. Visitors driving to campus should review current visitor-parking information before arrival.</p>
+    </section>
+  </div>
+  <section class="section-block" aria-labelledby="hotels-heading">
+    <div class="section-heading"><div><p class="section-kicker">Nearby lodging</p><h2 id="hotels-heading">Hotels</h2></div></div>
+    <div class="hotel-grid">
+      {% for hotel in local.hotels %}
+      <article class="hotel-card"><h3><a href="{{ hotel.url }}">{{ hotel.name }}</a></h3><p>{{ hotel.walk }}</p></article>
+      {% endfor %}
+    </div>
+    <p class="fine-print">Hotel links and walking estimates are retained from the {{ conference.year }} conference information. Verify current rates, availability, and routes before booking.</p>
+  </section>
+</div>
+{% endblock %}

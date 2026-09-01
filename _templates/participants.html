@@ -1,0 +1,18 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <header class="page-header page-header--standalone">
+    <p class="section-kicker">Community</p>
+    <h1>Participants</h1>
+    <p class="lede">Invited speakers for the {{ conference.year }} Tech Topology Conference.</p>
+  </header>
+  <section class="content-card" aria-labelledby="invited-speakers-heading">
+    <h2 id="invited-speakers-heading">Invited speakers</h2>
+    <ul class="speaker-list speaker-list--page">
+      {% for speaker in speakers %}
+      <li><a href="{{ speaker.url }}">{{ speaker.name }}</a> <span>({{ speaker.institution }})</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}

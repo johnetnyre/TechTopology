@@ -1,0 +1,43 @@
+<header>
+  <div class="gt-brandbar">
+    <div class="shell gt-brandbar__inner">
+      <a class="gt-wordmark" href="https://www.gatech.edu/" aria-label="Georgia Institute of Technology home page">
+        <span class="gt-mark" aria-hidden="true">GT</span>
+        <span>Georgia Institute of Technology</span>
+      </a>
+      <span class="brandbar-label">School of Mathematics</span>
+    </div>
+  </div>
+
+  <section class="hero" aria-labelledby="site-title">
+    <div class="hero-decoration" aria-hidden="true"></div>
+    <div class="shell hero__inner">
+      <div class="hero__copy">
+        {% if conference.status_label %}<p class="eyebrow">{{ conference.status_label }}</p>{% endif %}
+        <a class="site-title-link" href="{{ url('/') }}">
+          <span id="site-title" class="site-title">{{ conference.site_title }}</span>
+        </a>
+        <p class="site-subtitle">{{ conference.site_subtitle }}</p>
+      </div>
+      <div class="event-card" aria-label="Conference date and location">
+        <span class="event-card__year">{{ conference.year }}</span>
+        <strong>{{ conference.dates }}</strong>
+        <span>{{ conference.location }}</span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="primary-nav" aria-label="Main navigation">
+    <div class="shell nav__inner">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span aria-hidden="true" class="menu-toggle__icon"></span>
+        <span>Menu</span>
+      </button>
+      <ul id="primary-menu" class="nav-list">
+      {% for item in conference.navigation %}
+        <li><a {% if page_path == item.url %}aria-current="page"{% endif %} href="{{ url(item.url) }}">{{ item.label }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>

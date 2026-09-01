@@ -1,0 +1,21 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <article class="content-card">
+    <header class="page-header">
+      <p class="section-kicker">Attendance</p>
+      <h1>Registration & support</h1>
+      <p class="lede">Registration and support information for the {{ conference.year }} Tech Topology Conference will be posted here.</p>
+    </header>
+    <div class="status-callout">
+      <strong>Information forthcoming</strong>
+      <p>The conference will take place {{ conference.dates }} at Georgia Tech.</p>
+    </div>
+    <section aria-labelledby="registration-updates">
+      <h2 id="registration-updates">Registration updates</h2>
+      <p>Registration, funding-request deadlines, and lightning-talk submission information have not yet been announced.</p>
+      <p>Questions may be sent to <a href="mailto:{{ conference.contact_email }}">{{ conference.contact_email }}</a>.</p>
+    </section>
+  </article>
+</div>
+{% endblock %}

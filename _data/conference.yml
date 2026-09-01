@@ -1,0 +1,42 @@
+site_title: Tech Topology
+site_subtitle: Annual conference in low-dimensional and geometric topology
+institution: Georgia Institute of Technology
+year: 2026
+ordinal: sixteenth
+dates: December 11–13, 2026
+location: Skiles 006 · Georgia Tech · Atlanta, Georgia
+status: upcoming
+status_label: 2026 conference
+contact_email: ttc@math.gatech.edu
+registration_url: ''
+registration_open: false
+schedule_published: false
+lightning_deadline: To be announced
+funding_deadline: To be announced
+support_line: Supported by the NSF and the Georgia Institute of Technology
+organizers:
+  - Neda Bagherifard
+  - John Etnyre
+  - Jennifer Hom
+  - Anubhav Poudel
+  - Randy Van Why
+  - Shunyu Wan
+navigation:
+  - label: Home
+    url: /
+  - label: Schedule
+    url: /schedule/
+  - label: Participants
+    url: /participants/
+  - label: Registration & Support
+    url: /registration/
+  - label: Local Information
+    url: /local-information/
+  - label: Photos
+    url: /photos/
+  - label: Past Speakers
+    url: /past-speakers/
+  - label: Previous Conferences
+    url: /previous-conferences/
+  - label: Contact
+    url: /contact/

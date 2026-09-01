@@ -1,0 +1,12 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <article class="contact-card">
+    <p class="section-kicker">Questions</p>
+    <h1>Contact</h1>
+    <p class="lede">For information about Tech Topology, contact the organizers at:</p>
+    <p class="contact-email"><a href="mailto:{{ conference.contact_email }}">{{ conference.contact_email }}</a></p>
+    <p>Conference messages should come from an organizer or a Georgia Tech email address.</p>
+  </article>
+</div>
+{% endblock %}

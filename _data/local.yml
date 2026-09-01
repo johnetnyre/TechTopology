@@ -1,0 +1,21 @@
+hotels:
+  - name: Georgian Terrace
+    walk: About a 10 minute walk to the department
+    url: https://thegeorgianterrace.com/
+  - name: Georgia Tech Hotel and Conference Center
+    walk: About a 10 minute walk to the department
+    url: https://www.gatechhotel.com/
+  - name: Crowne Plaza Atlanta - Midtown
+    walk: About a 10 minute walk to the department
+    url: https://www.ihg.com/crowneplaza/hotels/us/en/atlanta/atlpw/hoteldetail
+  - name: Hampton Inn Atlanta-Georgia Tech-Downtown
+    walk: Less than a 5 minute walk to the department
+    url: https://www.hilton.com/en/hotels/atlgthx-hampton-atlanta-georgia-tech-downtown/
+  - name: Hilton Garden Inn Atlanta Midtown
+    walk: About a 10–15 minute walk to the department
+    url: https://www.hilton.com/en/hotels/atlmid-ht-hilton-garden-inn-atlanta-midtown/
+venue:
+  name: Skiles Classroom Building
+  room: Skiles 006
+  campus_map: https://map.gatech.edu/
+  parking: https://pts.gatech.edu/

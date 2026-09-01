@@ -1,0 +1,49 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <header class="page-header page-header--standalone">
+    <p class="section-kicker">Program</p>
+    <h1>Schedule</h1>
+    <p class="lede">The {{ conference.year }} Tech Topology Conference will be held {{ conference.dates }} at Georgia Tech.</p>
+  </header>
+
+  {% if not conference.schedule_published %}
+  <section class="content-card empty-state" aria-labelledby="schedule-forthcoming">
+    <div class="empty-state__icon" aria-hidden="true">∗</div>
+    <h2 id="schedule-forthcoming">Detailed schedule forthcoming</h2>
+    <p>Talk times, titles, abstracts, and lightning-talk information will be posted here as the program is finalized.</p>
+    <p>Invited speakers are listed on the <a href="{{ url('/participants/') }}">Participants page</a>.</p>
+  </section>
+  {% else %}
+  <nav class="anchor-nav" aria-label="Schedule sections">
+    <a href="#daily-schedule">Daily schedule</a>
+    <a href="#lightning-talks">Lightning talks</a>
+    <a href="#abstracts">Titles & abstracts</a>
+  </nav>
+
+  <section id="daily-schedule" aria-labelledby="daily-heading">
+    <div class="section-heading"><div><p class="section-kicker">At a glance</p><h2 id="daily-heading">Daily schedule</h2></div></div>
+    <div class="days-grid">
+      {% for day in schedule.days %}
+      <section class="day-card" aria-labelledby="day-{{ loop.index }}">
+        <header><div><span>{{ day.date }}</span><h3 id="day-{{ loop.index }}">{{ day.day }}</h3></div></header>
+        <ol class="timeline">
+          {% for event in day.events %}
+          <li class="timeline-event timeline-event--{{ event.type }}">
+            <time>{{ event.time }}</time>
+            <div>
+              {% if event.speaker %}<span class="event-speaker">{{ event.speaker }}</span>{% endif %}
+              <strong>{{ event.title }}</strong>
+              {% if event.note %}<span class="event-note">{{ event.note }}</span>{% endif %}
+              {% if event.location %}<span class="event-location">{% if event.url %}<a href="{{ event.url }}">{{ event.location }}</a>{% else %}{{ event.location }}{% endif %}</span>{% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

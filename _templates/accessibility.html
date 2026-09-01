@@ -1,0 +1,18 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <article class="content-card prose">
+    <header class="page-header">
+      <p class="section-kicker">Digital access</p>
+      <h1>Accessibility statement</h1>
+      <p class="lede">Tech Topology aims to provide a website that is usable by the widest possible audience, including people using assistive technologies.</p>
+    </header>
+    <h2>Design standard</h2>
+    <p>This site is designed toward WCAG 2.1 Level AA. It uses semantic landmarks and headings, keyboard-accessible navigation, visible focus indicators, responsive reflow, accessible color contrast, reduced-motion support, and sufficiently large interactive controls.</p>
+    <h2>Automated checks</h2>
+    <p>The repository includes an automated accessibility test in GitHub Actions. Automated tools cannot verify every accessibility requirement, so content changes should also receive keyboard and screen-reader review.</p>
+    <h2>Report a problem</h2>
+    <p>If you encounter an accessibility barrier, email <a href="mailto:{{ conference.contact_email }}">{{ conference.contact_email }}</a> and describe the page and issue.</p>
+  </article>
+</div>
+{% endblock %}

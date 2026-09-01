@@ -1,0 +1,26 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <header class="page-header page-header--standalone">
+    <p class="section-kicker">Conference gallery</p>
+    <h1>Photos</h1>
+    {% if photos %}<p class="lede">Images from the {{ conference.year }} Tech Topology Conference.</p>{% else %}<p class="lede">No {{ conference.year }} conference photos were published on the legacy site.</p>{% endif %}
+  </header>
+  {% if photos %}
+  <div class="photo-grid">
+    {% for photo in photos %}
+    <figure class="photo-card">
+      <img src="{{ url(photo.src) }}" alt="{{ photo.alt }}" loading="lazy" width="{{ photo.width|default(1200) }}" height="{{ photo.height|default(800) }}">
+      {% if photo.caption %}<figcaption>{{ photo.caption }}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+  {% else %}
+  <section class="empty-state" aria-labelledby="photos-empty">
+    <div class="empty-state__icon" aria-hidden="true">◌</div>
+    <h2 id="photos-empty">Photo gallery ready</h2>
+    <p>Add image files to <code>assets/images/photos/</code> and list them in <code>_data/photos.yml</code>. Each photograph has a dedicated alternative-text field and optional caption.</p>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

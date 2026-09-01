@@ -1,0 +1,13 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <header class="page-header page-header--standalone">
+    <p class="section-kicker">Archive</p>
+    <h1>Previous conferences</h1>
+    <p class="lede">Explore earlier Tech Topology meetings. These links currently point to the original Georgia Tech conference archive.</p>
+  </header>
+  <div class="year-grid">
+    {% for conf in previous %}<a class="year-card" href="{{ conf.url }}"><span>TTC</span><strong>{{ conf.year }}</strong><span aria-hidden="true">↗</span></a>{% endfor %}
+  </div>
+</div>
+{% endblock %}

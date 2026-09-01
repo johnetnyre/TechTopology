@@ -1,0 +1,5 @@
+# Add the 2026 daily program here when it is finalized, then set
+# schedule_published: true in _data/conference.yml.
+days: []
+lightning_sessions: []
+invited_abstracts: []

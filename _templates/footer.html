@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <section aria-labelledby="footer-organizers">
+      <h2 id="footer-organizers">Organizers</h2>
+      <ul class="organizer-list">
+        {% for organizer in conference.organizers %}<li>{{ organizer }}</li>{% endfor %}
+      </ul>
+    </section>
+    <section aria-labelledby="footer-contact">
+      <h2 id="footer-contact">Conference</h2>
+      <p><a href="mailto:{{ conference.contact_email }}">{{ conference.contact_email }}</a></p>
+      <p>{{ conference.support_line }}</p>
+    </section>
+    <section aria-labelledby="footer-accessibility">
+      <h2 id="footer-accessibility">Accessibility</h2>
+      <p>This site is designed for keyboard access, responsive reflow, reduced motion, and WCAG 2.1 AA color contrast.</p>
+      <p><a href="{{ url('/accessibility/') }}">Accessibility statement</a></p>
+    </section>
+  </div>
+  <div class="shell footer-bottom">
+    <span>© {{ conference.year }} Tech Topology</span>
+    <a href="https://math.gatech.edu/">Georgia Tech School of Mathematics</a>
+  </div>
+</footer>

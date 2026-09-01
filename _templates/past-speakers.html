@@ -1,0 +1,34 @@
+{% extends '_templates/base.html' %}
+{% block content %}
+<div class="shell page-shell">
+  <header class="page-header page-header--standalone">
+    <p class="section-kicker">Conference history</p>
+    <h1>Past speakers</h1>
+    <p class="lede">A searchable record of colloquium and invited speakers from previous Tech Topology conferences.</p>
+  </header>
+
+  <div class="speaker-search">
+    <label for="speaker-search">Search past speakers</label>
+    <input id="speaker-search" type="search" placeholder="Search by name or institution" autocomplete="off">
+    <p id="speaker-count" class="search-status" role="status" aria-live="polite"></p>
+  </div>
+
+  <section class="past-section" aria-labelledby="colloquium-past">
+    <h2 id="colloquium-past">Colloquium speakers</h2>
+    <div class="past-speaker-grid">
+      {% for speaker in past_speakers.colloquium %}
+      <article class="past-speaker" data-speaker-card><strong>{{ speaker[0] }}</strong><span>{{ speaker[1:]|join(', ') }}</span></article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="past-section" aria-labelledby="invited-past">
+    <h2 id="invited-past">All invited speakers</h2>
+    <div class="past-speaker-grid">
+      {% for speaker in past_speakers.invited %}
+      <article class="past-speaker" data-speaker-card><strong>{{ speaker[0] }}</strong><span>{{ speaker[1:]|join(', ') }}</span></article>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}
