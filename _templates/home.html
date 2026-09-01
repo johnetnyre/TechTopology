@@ -9,6 +9,20 @@
       <div class="button-row">
         {% if conference.registration_open and conference.registration_url %}
         <a class="button button--primary" href="{{ conference.registration_url }}">Register / Propose a Lightning Talk</a>
+        <section class="deadline-callout" aria-labelledby="deadlines-heading">
+  <h2 id="deadlines-heading">Important deadlines</h2>
+
+  <ul>
+    <li>
+      <strong>Funding request priority deadline:</strong>
+      {{ conference.funding_deadline }}
+    </li>
+    <li>
+      <strong>Lightning talk proposal deadline:</strong>
+      {{ conference.lightning_deadline }}
+    </li>
+  </ul>
+</section>
         {% endif %}
         <a class="button button--secondary" href="{{ url('/schedule/') }}">Schedule information</a>
         <a class="button button--secondary" href="{{ url('/previous-conferences/') }}">Conference archive</a>
