@@ -4,14 +4,42 @@
   <header class="page-header page-header--standalone">
     <p class="section-kicker">Community</p>
     <h1>Participants</h1>
+    <p class="lede">
+      Speakers and participants in the {{ conference.year }}
+      Tech Topology Conference.
+    </p>
   </header>
+
   <section class="content-card" aria-labelledby="invited-speakers-heading">
     <h2 id="invited-speakers-heading">Invited speakers</h2>
+
     <ul class="speaker-list speaker-list--page">
       {% for speaker in speakers %}
-      <li><a href="{{ speaker.url }}">{{ speaker.name }}</a> <span>({{ speaker.institution }})</span></li>
+      <li>
+        <a href="{{ speaker.url }}">{{ speaker.name }}</a>
+        <span>({{ speaker.institution }})</span>
+      </li>
       {% endfor %}
     </ul>
   </section>
+
+  {% if participants %}
+  <section class="content-card" aria-labelledby="participants-heading">
+    <h2 id="participants-heading">Other participants</h2>
+
+    <ul class="speaker-list speaker-list--page">
+      {% for person in participants %}
+      <li>
+        {% if person.url %}
+          <a href="{{ person.url }}">{{ person.name }}</a>
+        {% else %}
+          {{ person.name }}
+        {% endif %}
+        <span>({{ person.institution }})</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 </div>
 {% endblock %}
