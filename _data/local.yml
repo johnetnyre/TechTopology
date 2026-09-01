@@ -5,15 +5,15 @@ hotels:
   - name: Georgia Tech Hotel and Conference Center
     walk: About a 10 minute walk to the department
     url: https://www.gatechhotel.com/
-  - name: Crowne Plaza Atlanta - Midtown
+  - name: Element by Marriott Atlanta Midtown
     walk: About a 10 minute walk to the department
-    url: https://www.ihg.com/crowneplaza/hotels/us/en/atlanta/atlpw/hoteldetail
+    url: https://www.marriott.com/en-us/hotels/atlle-element-atlanta-midtown/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0
   - name: Hampton Inn Atlanta-Georgia Tech-Downtown
     walk: Less than a 5 minute walk to the department
     url: https://www.hilton.com/en/hotels/atlgthx-hampton-atlanta-georgia-tech-downtown/
   - name: Hilton Garden Inn Atlanta Midtown
     walk: About a 10–15 minute walk to the department
-    url: https://www.hilton.com/en/hotels/atlmid-ht-hilton-garden-inn-atlanta-midtown/
+    url: https://www.hilton.com/en/hotels/atlamgi-hilton-garden-inn-atlanta-midtown/
 venue:
   name: Skiles Classroom Building
   room: Skiles 006
