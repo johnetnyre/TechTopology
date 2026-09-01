@@ -15,12 +15,9 @@ lightning_deadline: To be announced
 funding_deadline: To be announced
 support_line: Supported by the NSF and the Georgia Institute of Technology
 organizers:
-  - Neda Bagherifard
   - John Etnyre
   - Jennifer Hom
-  - Anubhav Poudel
-  - Randy Van Why
-  - Shunyu Wan
+  - Jonathan Zung
 navigation:
   - label: Home
     url: /
