@@ -1,26 +1,18 @@
+{% extends '_templates/base.html' %}
+{% block content %}
 <div class="shell page-shell">
   <article class="content-card">
     <header class="page-header">
       <p class="section-kicker">Attendance</p>
       <h1>Registration &amp; support</h1>
-      <p class="lede">
-        To register, apply for funding, and/or request to give a lightning
-        talk, please fill out the registration form.
-      </p>
+      <p class="lede">To register, apply for funding, and/or request to give a lightning talk, please fill out the registration form.</p>
     </header>
 
     <div class="status-callout">
       <strong>Registration is open</strong>
+      <p>If you plan to come to the conference, whether or not you need funding, please register.</p>
       <p>
-        If you plan to come to the conference, whether or not you need
-        funding, please register.
-      </p>
-
-      <p>
-        <a class="button button--primary"
-           href="{{ conference.registration_url }}">
-          Registration, funding, and lightning-talk form
-        </a>
+        <a class="button button--primary" href="{{ conference.registration_url }}">Registration, funding, and lightning-talk form</a>
       </p>
     </div>
 
@@ -28,40 +20,20 @@
       <h2 id="funding-lightning-heading">Funding and lightning talks</h2>
 
       {% if conference.funding_deadline != 'To be announced' %}
-      <p>
-        Funding requests received before
-        <strong>{{ conference.funding_deadline }}</strong>
-        will be given priority.
-      </p>
+      <p>Funding requests received before <strong>{{ conference.funding_deadline }}</strong> will be given priority.</p>
       {% else %}
-      <p>
-        The priority deadline for funding requests will be announced soon.
-      </p>
+      <p>The priority deadline for funding requests will be announced soon.</p>
       {% endif %}
 
       {% if conference.lightning_deadline != 'To be announced' %}
-      <p>
-        The deadline for submitting proposals for lightning talks is
-        <strong>{{ conference.lightning_deadline }}</strong>.
-      </p>
+      <p>The deadline for submitting proposals for lightning talks is <strong>{{ conference.lightning_deadline }}</strong>.</p>
       {% else %}
-      <p>
-        The deadline for submitting proposals for lightning talks will be
-        announced soon.
-      </p>
+      <p>The deadline for submitting proposals for lightning talks will be announced soon.</p>
       {% endif %}
 
-      <p>
-        The registration form is also the place to indicate that you would
-        like to give a lightning talk.
-      </p>
+      <p>The registration form is also the place to indicate that you would like to give a lightning talk.</p>
 
-      <p>
-        Questions may be sent to
-        <a href="mailto:{{ conference.contact_email }}">
-          {{ conference.contact_email }}
-        </a>.
-      </p>
+      <p>Questions may be sent to <a href="mailto:{{ conference.contact_email }}">{{ conference.contact_email }}</a>.</p>
     </section>
   </article>
 </div>
