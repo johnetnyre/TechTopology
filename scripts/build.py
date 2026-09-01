@@ -28,6 +28,7 @@ def normalize_baseurl(value: str | None) -> str:
 site = load_yaml(ROOT / "site.yml") or {}
 conference = load_yaml(ROOT / "_data" / "conference.yml")
 speakers = load_yaml(ROOT / "_data" / "speakers.yml")
+participants = load_yaml(ROOT / "_data" / "participants.yml")
 schedule = load_yaml(ROOT / "_data" / "schedule.yml")
 lightning_abstracts = load_yaml(ROOT / "_data" / "lightning_abstracts.yml")
 previous = load_yaml(ROOT / "_data" / "previous.yml")
@@ -60,6 +61,7 @@ def render(template_name: str, output_path: str, **context):
         "site": site,
         "conference": conference,
         "speakers": speakers,
+        "participants": participants,
         "schedule": schedule,
         "lightning_abstracts": lightning_abstracts,
         "previous": previous,
