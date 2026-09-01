@@ -40,7 +40,29 @@
     </aside>
   </section>
 
+ <section class="speaker-showcase" aria-labelledby="speaker-heading">
 
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">Invited program</p>
+
+        <h2 id="speaker-heading">
+          {{ conference.year }} speakers
+        </h2>
+      </div>
+    </div>
+
+    <ul class="speaker-list">
+      {% for speaker in speakers %}
+      <li>
+        <a href="{{ speaker.url }}">{{ speaker.name }}</a>
+        <span>({{ speaker.institution }})</span>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </section>
+  
   <section class="content-panel deadline-callout"
            aria-labelledby="deadlines-heading">
 
@@ -79,29 +101,6 @@
 
   </section>
 
-
-  <section class="speaker-showcase" aria-labelledby="speaker-heading">
-
-    <div class="section-heading">
-      <div>
-        <p class="section-kicker">Invited program</p>
-
-        <h2 id="speaker-heading">
-          {{ conference.year }} speakers
-        </h2>
-      </div>
-    </div>
-
-    <ul class="speaker-list">
-      {% for speaker in speakers %}
-      <li>
-        <a href="{{ speaker.url }}">{{ speaker.name }}</a>
-        <span>({{ speaker.institution }})</span>
-      </li>
-      {% endfor %}
-    </ul>
-
-  </section>
 
 
   <div class="home-grid">
