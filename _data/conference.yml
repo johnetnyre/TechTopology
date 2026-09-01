@@ -9,10 +9,10 @@ status: upcoming
 status_label: 2026 conference
 contact_email: ttc@math.gatech.edu
 registration_url: ''
-registration_open: false
+registration_open: true
 schedule_published: false
-lightning_deadline: To be announced
-funding_deadline: To be announced
+lightning_deadline: October 9
+funding_deadline: October 9
 support_line: Supported by the NSF and the Georgia Institute of Technology
 organizers:
   - John Etnyre
