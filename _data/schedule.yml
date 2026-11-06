@@ -5,25 +5,24 @@ days:
     date: "December 11, 2026"
     events:
       - time: "3:30-4:00"
-        type: break
+        type: "break"
         title: "Tea"
-        location: 
 
       - time: "4:00-4:50"
-        type: talk
-        speaker: "Colloquium: David Gay"
-        location: "Talk title"
+        type: "talk"
+        speaker: "David Gay"
+        title: "Colloquium"
+        note: "Talk title"
 
       - time: "5:00-6:00"
-        type: lightning
+        type: "lightning"
         title: "Lightning talk session 1"
-        location: "9 talks, see below"
+        note: "9 talks, see below"
 
       - time: "6:30"
-        type: break
+        type: "break"
         title: "Social Gathering"
-        location: "Club Room at the Georgia Tech Hotel" 
-
+        location: "Club Room at the Georgia Tech Hotel"
 
 lightning_sessions: []
 invited_abstracts: []
