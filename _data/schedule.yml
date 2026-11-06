@@ -11,7 +11,7 @@ days:
 
       - time: "4:00-4:50"
         type: talk
-        speaker: Colloquium: David Gay
+        speaker: "Colloquium: David Gay"
         location: "Talk title"
 
       - time: "5:00-6:00"
