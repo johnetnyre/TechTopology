@@ -1,12 +1,12 @@
 # Add the 2026 daily program here when it is finalized, then set
 # schedule_published: true in _data/conference.yml.
 days:
-  - day: Friday
-    date: December 11, 2026
+  - day: "Friday"
+    date: "December 11, 2026"
     events:
       - time: "3:30-4:00"
         type: break
-        title: Tea
+        title: "Tea"
         location: 
 
       - time: "4:00-4:50"
@@ -16,13 +16,13 @@ days:
 
       - time: "5:00-6:00"
         type: lightning
-        title: Lightning talk session 1
-        location: 9 talks, see below
+        title: "Lightning talk session 1"
+        location: "9 talks, see below"
 
       - time: "6:30"
         type: break
-        title: Social Gathering
-        location: Club Room at the Georgia Tech Hotel 
+        title: "Social Gathering"
+        location: "Club Room at the Georgia Tech Hotel" 
 
 
 lightning_sessions: []
