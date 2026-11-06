@@ -26,12 +26,21 @@
     <div class="days-grid">
       {% for day in schedule.days %}
       <section class="day-card" aria-labelledby="day-{{ loop.index }}">
-        <header><div><span>{{ day.date }}</span><h3 id="day-{{ loop.index }}">{{ day.day }}</h3></div></header>
+        <header>
+  <h3 id="day-{{ loop.index }}">
+    {{ day.day }}, {{ day.date }}
+  </h3>
+</header>
         <ol class="timeline">
           {% for event in day.events %}
           <li class="timeline-event timeline-event--{{ event.type }}">
-            <time>{{ event.time }}</time>
-            <div>
+  <time>{{ event.time }}</time>
+
+  <span class="event-type">
+    {{ event.type }}
+  </span>
+
+  <div>
               {% if event.speaker %}<span class="event-speaker">{{ event.speaker }}</span>{% endif %}
               <strong>{{ event.title }}</strong>
               {% if event.note %}<span class="event-note">{{ event.note }}</span>{% endif %}
