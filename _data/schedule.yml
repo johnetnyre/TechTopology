@@ -97,6 +97,65 @@ days:
         type: "talk"
         speaker: "Luya Wang"
         title: "TBA"
+lightning_sessions:
+  - title: "Lightning talk session 1"
+      day: "Friday"
+      date: "December 11, 2026"
+      time: "5:00-6:00"
+      talks:
+        - speaker: "Speaker TBA"
+          title: "Title TBA"
 
-lightning_sessions: []
-invited_abstracts: []
+- title: "Lightning talk session 2"
+      day: "Saturday"
+      date: "December 12, 2026"
+      time: "12:30-1:30"
+      talks:
+        - speaker: "Speaker TBA"
+          title: "Title TBA"
+
+invited_abstracts:
+  - speaker: "Eduardo Fernández Fuertes"
+    title: "TBA"
+    abstract: |
+      TBA
+      
+  - speaker: "David Gay"
+    title: "TBA"
+    abstract: |
+      TBA      
+      
+  - speaker: "Sherry Gong"
+    title: "TBA"
+    abstract: |
+      TBA
+      
+  - speaker: "Mark Hughes"
+    title: "A knotted projective plane that can't be reduced"
+    abstract: |
+      One way to construct a knotted projective plane in the 4-sphere is to take the connected sum of a standard projective 
+      plane with a knotted 2-sphere. A longstanding conjecture of Kinoshita asserts that every knotted projective plane can 
+      be obtained in this way. I will describe a counterexample, constructed from a classical knot and a braid, and explain 
+      how the peripheral subgroup of its complement provides an obstruction to this decomposition. The construction also 
+      yields a knotted Klein bottle answering a related question. The talk will discuss the geometry of the construction and 
+      the main ideas of the proof. This is joint work with Seungwon Kim, Maggie Miller, and Gheehyun Nahm.          
+
+  - speaker: "Isabella Kahn"
+    title: "TBA"
+    abstract: |
+      TBA
+      
+  - speaker: "Adam Levine"
+    title: "TBA"
+    abstract: |
+      TBA      
+      
+  - speaker: "Luya Wang"
+    title: "Complements of submanifolds in 4-dimensional Weinstein domains"
+    abstract: |
+      I will introduce the notion of nearly Lefschetz fibrations, which can be viewed as the complements of neighborhoods of 
+      positive multisections in bordered Lefschetz fibrations. We show that these objects are supported by canonical 
+      Stein/Weinstein structures and provide a tool to understand Lagrangian submanifolds in Weinstein domains. In particular, 
+      we show that in 4-dimensional Weinstein domains, up to deformation, all Lagrangian disks with Legendrian boundaries are 
+      regular, in the sense of Eliashberg-Ganatra-Lazarev. This is joint work with Agniva Roy and Joseph Breen.
+
