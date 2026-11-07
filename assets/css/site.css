@@ -275,3 +275,25 @@ code { padding: .1rem .3rem; border-radius: .25rem; background: #edf0f3; color: 
 .deadline-callout { text-align: center; }
 .deadline-callout ul { display: inline-block; margin-left: auto; margin-right: auto; text-align: left; }
 .deadline-callout .deadline-action { margin-top: 1.25rem; margin-bottom: 0; text-align: center; }
+
+/* More compact invited talk title/abstract cards */
+
+.abstract-card {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.abstract-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
+.abstract-card .talk-title {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+}
+
+.abstract-card .abstract-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
