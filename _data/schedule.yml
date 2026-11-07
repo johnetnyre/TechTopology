@@ -12,7 +12,7 @@ days:
         type: "talk"
         speaker: "David Gay"
         title: "Colloquium"
-        note: "Talk title"
+        note: "TBA"
 
       - time: "5:00-6:00"
         type: "lightning"
@@ -23,6 +23,60 @@ days:
         type: "break"
         title: "Social Gathering"
         location: "Club Room at the Georgia Tech Hotel"
+        
+  - day: "Saturday"
+    date: "December 12, 2026"
+    events:
+      - time: "9:00-9:30"
+        type: "break"
+        title: "Bagels and light refreshments"
+        
+      - time: "9:30-10:20"
+        type: "talk"
+        speaker: "Mark Hughes"
+        title: "TBA"
+
+      - time: "10:20-11:00"
+        type: "break"
+        title: "Coffee break"
+
+      - time: "11:00-11:50"
+        type: "talk"
+        speaker: "Sherry Gong"
+        title: "TBA"
+
+      - time: "11:50-12:30"
+        type: "meal"
+        title: "Catered Lunch"
+        note: "Fox Bros BBQ"
+
+      - time: "12:30-1:30"
+        type: "lightning"
+        title: "Lightning talk session 1"
+        note: "9 talks, see below"
+        
+      - time: "1:30-2:00"
+        type: "break"
+        title: "Coffee break"
+
+      - time: "2:00-2:50"
+        type: "talk"
+        speaker: "Isabella Kahn"
+        title: "TBA"
+
+      - time: "2:50-4:10"
+        type: "break"
+        title: "Extended coffee break"
+
+      - time: "4:10-5:00"
+        type: "talk"
+        speaker: "Adam Levine"
+        title: "TBA"
+        
+      - time: "6:00"
+        type: "break"
+        title: "Banquet"
+        location: "South City Kitchen"  
 
 lightning_sessions: []
 invited_abstracts: []
