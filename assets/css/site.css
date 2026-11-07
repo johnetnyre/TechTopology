@@ -297,3 +297,30 @@ code { padding: .1rem .3rem; border-radius: .25rem; background: #edf0f3; color: 
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* More compact lightning talk cards */
+
+#lightning-talks .content-card {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+#lightning-talks .content-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
+#lightning-talks .content-card > p {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+}
+
+#lightning-talks .lightning-talk-list {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+#lightning-talks .lightning-talk-list > li {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
