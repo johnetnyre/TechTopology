@@ -279,8 +279,8 @@ code { padding: .1rem .3rem; border-radius: .25rem; background: #edf0f3; color: 
 /* More compact invited talk title/abstract cards */
 
 .abstract-card {
-  padding-top: 0.65rem;
-  padding-bottom: 0.65rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
 }
 
 .abstract-card h3 {
