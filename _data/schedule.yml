@@ -106,6 +106,8 @@ lightning_sessions:
     talks:
       - speaker: "Speaker One"
         title: "TBA"
+      - speaker: "Speaker Two"
+        title: "TBA"  
 
   - title: "Lightning talk session 2"
     day: "Saturday"
