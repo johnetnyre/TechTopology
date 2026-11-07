@@ -187,37 +187,43 @@
       </p>
 
 
-      <ol class="lightning-talk-list">
+     <ul class="lightning-talk-list">
 
-        {% for talk in session.talks %}
+  {% for talk in session.talks %}
 
-        <li>
+  <li>
 
-          <p>
-            <strong>{{ talk.speaker }}</strong>
+    <div class="lightning-talk-heading">
 
-            {% if talk.institution %}
-            <span>({{ talk.institution }})</span>
-            {% endif %}
-          </p>
+      <strong class="lightning-speaker">
+        {{ talk.speaker }}
+      </strong>
 
-          {% if talk.title %}
-          <p>
-            <em>{{ talk.title }}</em>
-          </p>
-          {% endif %}
+      {% if talk.institution %}
+      <span class="lightning-institution">
+        ({{ talk.institution }})
+      </span>
+      {% endif %}
 
-          {% if talk.abstract %}
-          <p class="abstract-text">
-            {{ talk.abstract }}
-          </p>
-          {% endif %}
+      {% if talk.title %}
+      <span class="lightning-title">
+        — <em>{{ talk.title }}</em>
+      </span>
+      {% endif %}
 
-        </li>
+    </div>
 
-        {% endfor %}
+    {% if talk.abstract %}
+    <p class="abstract-text">
+      {{ talk.abstract }}
+    </p>
+    {% endif %}
 
-      </ol>
+  </li>
+
+  {% endfor %}
+
+</ul>
 
     </article>
 
