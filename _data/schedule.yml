@@ -97,22 +97,23 @@ days:
         type: "talk"
         speaker: "Luya Wang"
         title: "TBA"
+
 lightning_sessions:
   - title: "Lightning talk session 1"
-      day: "Friday"
-      date: "December 11, 2026"
-      time: "5:00-6:00"
-      talks:
-        - speaker: "Speaker TBA"
-          title: "Title TBA"
+    day: "Friday"
+    date: "December 11, 2026"
+    time: "5:00-6:00"
+    talks:
+      - speaker: "Speaker One"
+        title: "TBA"
 
-- title: "Lightning talk session 2"
-      day: "Saturday"
-      date: "December 12, 2026"
-      time: "12:30-1:30"
-      talks:
-        - speaker: "Speaker TBA"
-          title: "Title TBA"
+  - title: "Lightning talk session 2"
+    day: "Saturday"
+    date: "December 12, 2026"
+    time: "12:30-1:30"
+    talks:
+      - speaker: "Speaker One"
+        title: "TBA"
 
 invited_abstracts:
   - speaker: "Eduardo Fernández Fuertes"
