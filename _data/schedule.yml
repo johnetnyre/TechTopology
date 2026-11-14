@@ -104,18 +104,64 @@ lightning_sessions:
     date: "December 11, 2026"
     time: "5:00-6:00"
     talks:
-      - speaker: "Speaker One"
-        title: "TBA"
-      - speaker: "Speaker Two"
-        title: "TBA"  
+      - speaker: "Rithwik Susheel Vidyarthi"
+        title: "Floer homology and link detection"    
+
+      - speaker: "Krishnendu Kar"
+        title: "The odd Khovanov spectrum of split torus links"  
+
+      - speaker: "Allison Tsypin"
+        title: "Exotic knot traces and the epsilon-invariant"  
+
+      - speaker: "Noam Rabinovitz, Vakul	Raghavan, and Monica Sing"
+        title: "On the Tri-plane Crossing Number of Knotted Surfaces"  
+
+      - speaker: "Fraser Binns"
+        title: "Conway Tangle Detection"
+
+      - speaker: "Fang-Rong Zhan"
+        title: "Khovanov homology cannot see rim surgery"  
+
+      - speaker: "Michele Capovilla-Searle"
+        title: "The fractional Dehn twist coefficient of 4-braids"
+
+      - speaker: "Nico Fontova"
+        title: "Chromatic Graph Homology"
+
+      - speaker: "Judson Kuhrman"
+        title: "Miyazawa’s Invariant and Seifert Solids"
 
   - title: "Lightning talk session 2"
     day: "Saturday"
     date: "December 12, 2026"
     time: "12:30-1:30"
     talks:
-      - speaker: "Speaker One"
+      - speaker: "Gary Dunkerley"
+        title: "The upsilon invariant and generalized Batson surfaces"
+        
+      - speaker: "Yangxiao Luo"
+        title: "On unifying Jones representations of braid groups and Thompson’s group"
+
+      - speaker: "Jeffrey Norton"
+        title: "Exploring Dehn Twists and Branched Coverings in 3D"
+
+      - speaker: "Matthew Elpers"
+        title: "Heegaard Floer homology detects certain cohomology T^3"  
+
+      - speaker: "Adithyan Pandikkadan"
+        title: "Transverse Invariants in Cyclic Branched Covers"
+
+      - speaker: "Rakhal Chandran Baburam"
+        title: "Generalized Quasi-Alternating Links and 3-Manifolds without Anosov Flows"  
+
+      - speaker: "Riccardo Pedrotti"
         title: "TBA"
+           
+      - speaker: "Oscar Arevalo"
+        title: "Symplectic Caps for Brieskorn Spheres"  
+
+      - speaker: "Bryce Thomson"
+        title: "Lagrangian filling prime decomposition theorem"
 
 invited_abstracts:
   - speaker: "Eduardo Fernández Fuertes"
