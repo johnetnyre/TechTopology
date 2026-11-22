@@ -4,9 +4,6 @@
 - name: David Gay
   institution: University of Georgia
   url: https://www.math.uga.edu/directory/people/david-gay
-- name: Sherry Gong
-  institution: Texas A&M
-  url: https://people.tamu.edu/~sgongli/
 - name: Mark Hughes
   institution: BYU
   url: https://mathdept.byu.edu/~hughes/
@@ -16,6 +13,9 @@
 - name: Adam Levine
   institution: Duke University
   url: https://www.math.duke.edu/~alevine
+- name: Ian Sullivan
+  institution: University of Georgia
+  url: https://ian-a-sullivan.com/  
 - name: Luya Wang
   institution: IAS
   url: https://www.math.ias.edu/~luyawang/
