@@ -41,7 +41,7 @@ days:
 
       - time: "11:00-11:50"
         type: "talk"
-        speaker: "Sherry Gong"
+        speaker: "Ian Sullivan"
         title: "TBA"
 
       - time: "11:50-12:30"
