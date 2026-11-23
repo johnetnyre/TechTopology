@@ -174,11 +174,6 @@ invited_abstracts:
     abstract: |
       TBA      
       
-  - speaker: "Sherry Gong"
-    title: "TBA"
-    abstract: |
-      TBA
-      
   - speaker: "Mark Hughes"
     title: "A knotted projective plane that can't be reduced"
     abstract: |
@@ -202,6 +197,11 @@ invited_abstracts:
       its reinterpretation by Zemke as a new (and very powerful) version of bordered Floer homology. I will then show how 
       this theory can recover the original Lipshitz-Ozsváth-Thurston bordered theory, which can be explained very cleanly 
       in terms of immersed curves. This is joint work with Ian Zemke and Jonathan Hanselman.      
+
+  - speaker: "Ian Sullivan"
+    title: "TBA"
+    abstract: |
+      TBA
       
   - speaker: "Luya Wang"
     title: "Complements of submanifolds in 4-dimensional Weinstein domains"
