@@ -51,7 +51,7 @@ days:
 
       - time: "12:30-1:30"
         type: "lightning"
-        title: "Lightning talk session 1"
+        title: "Lightning talk session 2"
         note: "9 talks, see below"
         
       - time: "1:30-2:00"
